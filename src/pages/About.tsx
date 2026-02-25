@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import PageWrapper from "@/components/PageWrapper";
 import SectionHeading from "@/components/SectionHeading";
 import FloatingParticles from "@/components/FloatingParticles";
+import profilePhoto from "@/assets/profile-photo.jpg";
 
 const About = () => {
   return (
@@ -19,8 +20,12 @@ const About = () => {
             className="perspective-1000"
           >
             <div className="glass-card rounded-2xl p-8 hover:scale-[1.02] transition-transform">
-              <div className="w-24 h-24 rounded-2xl bg-about/20 flex items-center justify-center mb-6 mx-auto">
-                <span className="text-4xl font-display font-bold text-about">RH</span>
+              <div className="w-32 h-32 rounded-full overflow-hidden ring-4 ring-about/40 mx-auto mb-6 shadow-xl">
+                <img
+                  src={profilePhoto}
+                  alt="Rupendra Harle"
+                  className="w-full h-full object-cover object-top"
+                />
               </div>
               <h3 className="text-2xl font-display font-bold text-center mb-2">Rupendra Harle</h3>
               <p className="text-muted-foreground text-center text-sm mb-4">📍 Indore, Madhya Pradesh, India</p>
