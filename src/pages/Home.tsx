@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Linkedin, Github, Download } from "lucide-react";
 import PageWrapper from "@/components/PageWrapper";
 import FloatingParticles from "@/components/FloatingParticles";
+import profilePhoto from "@/assets/profile-photo.jpg";
 
 const Home = () => {
   return (
@@ -14,10 +15,14 @@ const Home = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="mb-8"
+            className="mb-6"
           >
-            <div className="w-32 h-32 mx-auto mb-8 rounded-full bg-primary/20 flex items-center justify-center glow-primary animate-pulse-glow">
-              <span className="text-5xl font-display font-bold gradient-text">RH</span>
+            <div className="w-36 h-36 mx-auto mb-6 rounded-full overflow-hidden ring-4 ring-primary/40 glow-primary shadow-2xl">
+              <img
+                src={profilePhoto}
+                alt="Rupendra Harle"
+                className="w-full h-full object-cover object-top"
+              />
             </div>
           </motion.div>
 
@@ -25,7 +30,7 @@ const Home = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.7 }}
-            className="text-5xl md:text-7xl lg:text-8xl font-bold font-display mb-6"
+            className="text-5xl md:text-7xl lg:text-8xl font-bold font-display mb-4"
           >
             <span className="gradient-text">RUPENDRA</span>
             <br />
@@ -36,7 +41,7 @@ const Home = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.6 }}
-            className="text-lg md:text-xl text-muted-foreground mb-4 max-w-2xl mx-auto"
+            className="text-lg md:text-xl text-muted-foreground mb-3 max-w-2xl mx-auto"
           >
             Visionary Leader • Data Analyst • Full Stack Developer
           </motion.p>
@@ -45,7 +50,7 @@ const Home = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.6 }}
-            className="text-sm text-muted-foreground mb-10"
+            className="text-sm text-muted-foreground mb-8"
           >
             📍 Indore, Madhya Pradesh, India
           </motion.p>
@@ -54,7 +59,7 @@ const Home = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.6 }}
-            className="flex flex-wrap justify-center gap-4 mb-12"
+            className="flex flex-wrap justify-center gap-4 mb-10"
           >
             <Link
               to="/projects"
@@ -68,9 +73,13 @@ const Home = () => {
             >
               Contact Me
             </Link>
-            <button className="inline-flex items-center gap-2 px-6 py-4 rounded-xl border border-border text-muted-foreground font-medium hover:text-foreground hover:border-primary transition-all hover:scale-105">
+            <a
+              href="/resume.pdf"
+              download="Rupendra_Harle_CV.pdf"
+              className="inline-flex items-center gap-2 px-6 py-4 rounded-xl border border-border text-muted-foreground font-medium hover:text-foreground hover:border-primary transition-all hover:scale-105"
+            >
               <Download size={18} /> Resume
-            </button>
+            </a>
           </motion.div>
 
           <motion.div
