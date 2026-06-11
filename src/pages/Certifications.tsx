@@ -6,6 +6,13 @@ import FloatingParticles from "@/components/FloatingParticles";
 
 const certifications = [
   {
+    title: "IBM Data Analysis with Python (DA0101EN)",
+    date: "2024",
+    link: "/cert-ibm-data-analysis.pdf",
+    pdfFile: "/cert-ibm-data-analysis.pdf",
+    color: "hsl(var(--certifications))",
+  },
+  {
     title: "Python Developer Certification",
     date: "Jul 2024",
     link: "https://cert.diceid.com/cid/4zby2TtDKR",
