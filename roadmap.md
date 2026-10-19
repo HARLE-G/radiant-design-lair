@@ -1,0 +1,4 @@
+- [ ] Refresh Home with anchored portfolio sections and recruiter-focused navigation.
+- [ ] Replace profile, skills, projects, education, achievements, and contact content with the supplied facts.
+- [ ] Preserve existing direct routes and working features; update SEO metadata.
+- [ ] Verify build, navigation, project detail, contact links, and mobile layout.

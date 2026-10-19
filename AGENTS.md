@@ -1,0 +1,1 @@
+- Keep one typed portfolio-content module as the source of truth for project facts so the home showcase and direct project-detail routes stay consistent.
